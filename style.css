@@ -108,3 +108,84 @@ h1 {
 .btn:hover {
   background-color: #7dd3fc;
 }
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #64748b;
+}
+
+.about-card,
+.contact-card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.skills-grid,
+.projects-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.projects-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-card,
+.project-card {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.skill-card h3,
+.project-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.contact-card {
+  text-align: center;
+  font-style: normal;
+}
+
+.contact-card p {
+  margin-bottom: 12px;
+}
+
+.contact-card a {
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.site-footer {
+  background-color: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 20px;
+}
