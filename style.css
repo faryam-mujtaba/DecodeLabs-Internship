@@ -24,6 +24,7 @@ ul {
   list-style: none;
 }
 
+/* Header / Navbar */
 .site-header {
   background-color: #0f172a;
   color: #ffffff;
@@ -48,6 +49,7 @@ ul {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -60,18 +62,29 @@ ul {
   color: #38bdf8;
 }
 
+/* Hero Section */
 .hero-section {
   min-height: 85vh;
   display: grid;
   place-items: center;
-  padding: 80px 20px;
+  padding: 70px 20px;
   background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: #ffffff;
   text-align: center;
 }
 
 .hero-content {
-  max-width: 750px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+  border: 5px solid #38bdf8;
 }
 
 .intro-text {
@@ -92,8 +105,9 @@ h1 {
 }
 
 .hero-description {
+  max-width: 700px;
+  margin: 0 auto 28px;
   font-size: 18px;
-  margin-bottom: 28px;
 }
 
 .btn {
@@ -103,16 +117,18 @@ h1 {
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #7dd3fc;
 }
 
+/* General Sections */
 .section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .section-header {
@@ -130,18 +146,31 @@ h1 {
   color: #64748b;
 }
 
+/* Cards */
 .about-card,
-.contact-card {
+.contact-card,
+.skill-card,
+.project-card {
   background-color: #ffffff;
-  padding: 32px;
+  padding: 28px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
+.about-card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Skills and Projects Grid */
 .skills-grid,
 .projects-grid {
   display: grid;
   gap: 24px;
+  width: 100%;
+}
+
+.skills-grid {
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -151,10 +180,6 @@ h1 {
 
 .skill-card,
 .project-card {
-  background-color: #ffffff;
-  padding: 28px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
   transition: transform 0.3s ease;
 }
 
@@ -169,13 +194,17 @@ h1 {
   margin-bottom: 12px;
 }
 
+/* Contact */
 .contact-card {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
   font-style: normal;
 }
 
 .contact-card p {
   margin-bottom: 12px;
+  word-break: break-word;
 }
 
 .contact-card a {
@@ -183,9 +212,83 @@ h1 {
   font-weight: bold;
 }
 
+/* Footer */
 .site-footer {
   background-color: #0f172a;
   color: #ffffff;
   text-align: center;
   padding: 24px 20px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 900px) {
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 60px 16px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 50px 16px;
+  }
+
+  .about-card,
+  .contact-card,
+  .skill-card,
+  .project-card {
+    padding: 24px;
+  }
 }
