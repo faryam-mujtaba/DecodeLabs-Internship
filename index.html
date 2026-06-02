@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal portfolio website of Faryam Mujtaba, a frontend development learner." />
+
+  <meta 
+    name="description" 
+    content="Personal portfolio website of Faryam Mujtaba, a frontend development learner." 
+  />
+
   <title>Faryam Mujtaba | Frontend Developer</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <header class="site-header">
     <nav class="navbar" aria-label="Main navigation">
-      <a href="#" class="logo">Faryam</a>
+      <a href="#home" class="logo">Faryam</a>
 
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -24,98 +32,143 @@
 
   <main>
 
-    <section class="hero-section">
-  <div class="hero-content">
-    <p class="intro-text">Hello, I am</p>
-    <h1>Faryam Mujtaba</h1>
-    <p class="hero-subtitle">Frontend Development Learner</p>
-    <p class="hero-description">
-      I am learning HTML, CSS, JavaScript, and React to build clean, responsive, and user-friendly websites.
-    </p>
-    <a href="#projects" class="btn">View My Work</a>
-  </div>
-</section>
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <img 
+          src="assets/profile.jpg" 
+          alt="Profile picture of Faryam Mujtaba" 
+          class="profile-img" 
+          width="160" 
+          height="160"
+        />
 
-<section id="about" class="about-section section">
-  <div class="section-header">
-    <h2>About Me</h2>
-    <p>A short introduction about my learning journey.</p>
-  </div>
+        <p class="intro-text">Hello, I am</p>
 
-  <article class="about-card">
-    <p>
-      I am a passionate frontend development learner who enjoys creating clean and structured web pages.
-      My current focus is improving my HTML, CSS, JavaScript, and responsive design skills through practical projects.
-    </p>
-  </article>
-</section>
+        <h1>Faryam Mujtaba</h1>
 
-<section id="skills" class="skills-section section">
-  <div class="section-header">
-    <h2>My Skills</h2>
-    <p>Technologies I am currently learning and practicing.</p>
-  </div>
+        <p class="hero-subtitle">Frontend Development Learner</p>
 
-  <div class="skills-grid">
-    <article class="skill-card">
-      <h3>HTML</h3>
-      <p>Creating structured and semantic web pages.</p>
-    </article>
+        <p class="hero-description">
+          I am learning HTML, CSS, JavaScript, and React to build clean, responsive, 
+          and user-friendly websites.
+        </p>
 
-    <article class="skill-card">
-      <h3>CSS</h3>
-      <p>Designing layouts, colors, spacing, and responsive pages.</p>
-    </article>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
 
-    <article class="skill-card">
-      <h3>JavaScript</h3>
-      <p>Adding logic and interactivity to websites.</p>
-    </article>
+    <section id="about" class="about-section section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>A short introduction about my learning journey.</p>
+      </div>
 
-    <article class="skill-card">
-      <h3>React</h3>
-      <p>Learning component-based frontend development.</p>
-    </article>
-  </div>
-</section>
+      <article class="about-card">
+        <p>
+          I am a passionate frontend development learner who enjoys creating clean and 
+          structured web pages. My current focus is improving my HTML, CSS, JavaScript, 
+          and responsive design skills through practical projects.
+        </p>
+      </article>
+    </section>
 
-<section id="projects" class="projects-section section">
-  <div class="section-header">
-    <h2>Projects</h2>
-    <p>Some beginner-friendly projects from my frontend learning journey.</p>
-  </div>
+    <section id="skills" class="skills-section section">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <p>Technologies I am currently learning and practicing.</p>
+      </div>
 
-  <div class="projects-grid">
-    <article class="project-card">
-      <h3>Static Portfolio Website</h3>
-      <p>A personal portfolio website built with HTML and CSS using semantic structure.</p>
-    </article>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>HTML</h3>
+          <p>Creating structured and semantic web pages.</p>
+        </article>
 
-    <article class="project-card">
-      <h3>Calculator UI</h3>
-      <p>A simple calculator interface designed using HTML, CSS, and layout techniques.</p>
-    </article>
+        <article class="skill-card">
+          <h3>CSS</h3>
+          <p>Designing layouts, colors, spacing, and responsive pages.</p>
+        </article>
 
-    <article class="project-card">
-      <h3>Landing Page</h3>
-      <p>A clean landing page concept focused on layout, spacing, and visual hierarchy.</p>
-    </article>
-  </div>
-</section>
+        <article class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Adding logic and interactivity to websites.</p>
+        </article>
 
-<section id="contact" class="contact-section section">
-  <div class="section-header">
-    <h2>Contact Me</h2>
-    <p>Feel free to connect with me for learning, collaboration, or opportunities.</p>
-  </div>
+        <article class="skill-card">
+          <h3>React</h3>
+          <p>Learning component-based frontend development.</p>
+        </article>
+      </div>
+    </section>
 
-  <address class="contact-card">
-    <p>Email: <a href="mailto:faryammujtabaangra@gmail.com">faryammujtabaangra@gmail.com</a></p>
-    <p>GitHub: <a href="#" target="_blank">Add your GitHub link here</a></p>
-    <p>LinkedIn: <a href="#" target="_blank">Add your LinkedIn link here</a></p>
-  </address>
-</section>
-    
+    <section id="projects" class="projects-section section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Some beginner-friendly projects from my frontend learning journey.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Static Portfolio Website</h3>
+          <p>
+            A personal portfolio website built with HTML and CSS using semantic structure.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Calculator UI</h3>
+          <p>
+            A simple calculator interface designed using HTML, CSS, and layout techniques.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Landing Page</h3>
+          <p>
+            A clean landing page concept focused on layout, spacing, and visual hierarchy.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section">
+      <div class="section-header">
+        <h2>Contact Me</h2>
+        <p>Feel free to connect with me for learning, collaboration, or opportunities.</p>
+      </div>
+
+      <address class="contact-card">
+        <p>
+          Email:
+          <a href="mailto:faryammujtabaangra@gmail.com">
+            faryammujtabaangra@gmail.com
+          </a>
+        </p>
+
+        <p>
+          GitHub:
+          <a 
+            href="https://github.com/faryam-mujtaba" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            github.com/faryam-mujtaba
+          </a>
+        </p>
+
+        <p>
+          LinkedIn:
+          <a 
+            href="https://www.linkedin.com/in/faryam-mujtaba-a31376354/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/faryam-mujtaba
+          </a>
+        </p>
+      </address>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -123,4 +176,5 @@
   </footer>
 
 </body>
+
 </html>
