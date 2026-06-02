@@ -1,6 +1,6 @@
-# Personal Portfolio Website
+# Task 1 - Static Personal Portfolio Website
 
-This is Project 1 of my Frontend Development internship task.
+This is Task 1 of my Frontend Development Internship at DecodeLabs.
 
 ## Project Title
 
@@ -8,7 +8,7 @@ Static Personal Portfolio Website
 
 ## Description
 
-This project is a static personal portfolio website created using HTML and CSS. It includes a clean layout, semantic HTML structure, responsive design, navigation links, profile image, skills section, projects section, and contact section.
+This project is a static personal portfolio website created using HTML and CSS. It includes a clean layout, semantic HTML structure, responsive design, navigation links, profile image, skills section, projects section, contact section, and footer.
 
 ## Technologies Used
 
@@ -16,6 +16,7 @@ This project is a static personal portfolio website created using HTML and CSS. 
 - CSS3
 - CSS Grid
 - Flexbox
+- GitHub Pages
 
 ## Features
 
@@ -32,6 +33,14 @@ This project is a static personal portfolio website created using HTML and CSS. 
 - Projects section
 - Contact section
 - Footer
+
+## Live Website
+
+https://faryam-mujtaba.github.io/Task-1-Static-Portfolio-Faryam-Mujtaba/
+
+## GitHub Repository
+
+https://github.com/faryam-mujtaba/Task-1-Static-Portfolio-Faryam-Mujtaba
 
 ## Author
 
